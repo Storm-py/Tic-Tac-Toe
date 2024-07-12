@@ -1,4 +1,4 @@
-const Gameboard = (function Gameboard() {
+const Gameboard = (()=> {
     const gameboard = ["", "", "", "", "", "", "", "", ""];
 
     function render() {
@@ -34,7 +34,7 @@ function createPlayer(name, mark) {
     };
 }
 
-const Game = (function Game() {
+const Game = (()=> {
     let Players = [];
     let currentPlayerIndex = 0;
     let gameOver = false;
